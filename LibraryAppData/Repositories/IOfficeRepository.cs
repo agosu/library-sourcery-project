@@ -1,0 +1,13 @@
+﻿using LibraryAppData.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LibraryAppData.Repositories
+{
+    public interface IOfficeRepository
+    {
+        public Task<IEnumerable<Office>> GetOffices();
+    }
+}

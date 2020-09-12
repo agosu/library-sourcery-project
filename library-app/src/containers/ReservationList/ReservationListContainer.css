@@ -1,0 +1,10 @@
+#user-reservation-title {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	color: #050237;
+}
+#user-reservation-container {
+	padding: 1rem;
+}

@@ -1,0 +1,160 @@
+/* ***** GENERAL PROFILE STYLING ***** */
+
+#edit-user-profile-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+/* ***** LEFT SIDE OF EDIT USER PROFILE ***** */
+#edit-user-profile-left {
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#edit-user-profile-picture-title {
+  color: #050237;
+  opacity: 0.3;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Inter';
+  margin-bottom: 0.5rem;
+}
+
+#user-profile-image-uploader {
+  opacity: 0;
+  position: absolute;
+  width: 30px;
+  z-index: 5;
+}
+#user-profile-image-uploader-span {
+  position: absolute;
+  z-index: 1;
+  color: #4568fb;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Inter';
+}
+#user-profile-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+#edit-profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* ***** RIGHT SIDE OF EDIT USER PROFILE ***** */
+
+#edit-user-profile-right {
+  width: 88%;
+  margin-left: 2rem;
+}
+#edit-user-profile-form {
+  display: grid;
+  column-gap: 1rem;
+  grid-auto-rows: minmax(3rem, auto);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    'full-name full-name full-name full-name . . . . . . . .'
+    'role role role  role default-office default-office default-office default-office . . . .'
+    'email-address email-address email-address  email-address phone-number phone-number phone-number phone-number . . . .'
+    'goodreads-switch goodreads-switch goodreads-switch goodreads-switch . . . . . . . .'
+    'link-field link-field link-field link-field link-field  link-field link-field link-btn . . . .'
+    'user-submit . . . . . . . . . . .';
+  width: 100%;
+  height: 100%;
+}
+
+#full-name,
+#role,
+#default-office,
+#email-address,
+#user-phone-number,
+#edit-user-link-field,
+#edit-user-link-btn,
+#edit-user-submit {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  border: 1px solid rgba(5, 2, 55, 0.15);
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 0.5rem;
+  font-family: 'Inter', monospace;
+}
+#edit-user-switch {
+  display: inline-block;
+}
+#edit-user-link-btn {
+  padding: 0.5rem 1.5rem;
+  background: #050237;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: 'Inter', monospace;
+  font-weight: 600;
+  font-size: 12px;
+}
+#edit-user-submit {
+  padding: 0.5rem 1.5rem;
+  background: #4568fb;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: 'Inter', monospace;
+  font-weight: 600;
+  font-size: 12px;
+}
+#full-name-wrapper {
+  grid-area: full-name;
+}
+#role-wrapper {
+  grid-area: role;
+}
+#full-name,
+#role,
+#default-office,
+#email-address,
+#user-phone-number,
+#edit-user-link-field {
+  height: 32px;
+}
+#default-office-wrapper {
+  grid-area: default-office;
+}
+#email-address-wrapper {
+  grid-area: email-address;
+}
+#user-phone-number-wrapper {
+  grid-area: phone-number;
+}
+#edit-user-link-field-wrapper {
+  grid-area: link-field;
+}
+#edit-user-link-btn-wrapper {
+  grid-area: link-btn;
+}
+#edit-user-submit-wrapper {
+  grid-area: user-submit;
+}
+
+#full-name-wrapper label,
+#role-wrapper label,
+#default-office-wrapper label,
+#email-address-wrapper label,
+#user-phone-number-wrapper label {
+  color: #050237;
+  opacity: 0.3;
+  font-family: 'Inter', monospace;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}

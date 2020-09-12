@@ -1,0 +1,10 @@
+div#book-details-rating-block svg.MuiSvgIcon-root {
+	color: #eeb23d;
+	height: 20px;
+}
+#star-rating-total {
+	display: inline-block;
+	font-weight: 600;
+	padding-left: 0.5rem;
+	font-size: 12px;
+}

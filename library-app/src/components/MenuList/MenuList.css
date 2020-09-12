@@ -1,0 +1,111 @@
+:root {
+  --inactive-menu-item-text-color: #050237;
+  --active-menu-item-text-color: #4568fb;
+}
+
+.menu {
+  height: 100vh;
+  width: 240px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 4rem;
+}
+
+#menu-links {
+  text-decoration: none;
+}
+.menu-bottom {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.menu-bottom-manage_account-button {
+  margin-bottom: 10px;
+}
+
+.list_item-wrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.list_item {
+  width: 100%;
+  position: relative;
+}
+
+.list_item-text,
+.list_subitem-text {
+  font-family: Inter, monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: var(--inactive-menu-item-text-color);
+}
+
+.list_subitem-text {
+  margin-left: 36px;
+}
+
+.list_item-text-active {
+  color: var(--active-menu-item-text-color);
+}
+
+.list_item-active {
+  background: rgba(69, 104, 251, 0.05);
+}
+
+#list_item-active_line {
+  width: 2px;
+  height: 100%;
+  right: 0;
+
+  position: absolute;
+
+  background: var(--active-menu-item-text-color);
+}
+
+#link-to-profile {
+  text-decoration: none;
+}
+
+/* Small devices (portrait tablets and large phones) */
+@media only screen and (max-width: 727px) {
+  .menu {
+    width: 33.3%;
+  }
+
+  .menu-bottom {
+    position: relative;
+    margin-top: 17px;
+  }
+
+  .menu-bottom-manage_account-button {
+    margin-bottom: 0;
+  }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .menu {
+    width: 66.6%;
+  }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 270px) {
+  .menu {
+    min-width: 180px;
+    min-height: 560px;
+    width: 66.6%;
+  }
+
+  .menu-bottom-manage_account-button > .MuiButtonBase-root {
+    height: 42px;
+  }
+}

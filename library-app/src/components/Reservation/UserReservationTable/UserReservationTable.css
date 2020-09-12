@@ -1,0 +1,141 @@
+/* ****** GENERAL TABLE STYLING ****** */
+
+div#main-content-display-wrapper div.MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded {
+	width: 100%;
+	height: 50%;
+	box-shadow: none;
+	border: none;
+}
+span#user-reservation-status {
+	padding-right: 8px;
+}
+
+span.user-reservations-table-heading {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+	color: #050237;
+	opacity: 0.3;
+}
+
+span.user-reservations-table-data-spans {
+	color: #050237;
+	opacity: 0.5;
+}
+
+div#user-reservation-table tbody.MuiTableBody-root tr:last-of-type th,
+div#user-reservation-table tbody.MuiTableBody-root tr:last-of-type td {
+	border-bottom: none;
+}
+/* ****** FIRST COLUMN STYLING( BOOK DETAILS ) ****** */
+img.user-reservation-book-cover {
+	max-width: 48px;
+	display: inline-block;
+}
+p.user-reservations-book-title {
+	display: inline-block;
+	max-width: 150px;
+	font-weight: 600;
+	font-family: 'Inter';
+	font-size: 14px;
+}
+div.book-details-table-right-side {
+	display: inline-block;
+}
+div.book-details-table-format {
+	display: inline-block;
+}
+div.table-formatter-wrapper {
+	display: grid;
+	grid-template-columns: auto 75%;
+}
+.book-title-author-reservations:visited {
+	color: #050237;
+}
+
+/* ****** STATUS COLUMN STYLING ****** */
+p.user-reservation-status-borrowed {
+	border-radius: 2px;
+	background-color: #0502372d;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 14px;
+	font-family: 'Inter';
+	padding: 2px;
+}
+div.user-reservation-status-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+p.user-reservation-status-requested {
+	border-radius: 2px;
+	background-color: #ee3d572d;
+	color: #ee3d57;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 14px;
+	font-family: 'Inter';
+	padding: 2px;
+}
+
+/* ****** BUTTONS ****** */
+button.modal-call-to-action-btn-primary-children {
+	background: #4568fb;
+	top: 0;
+	border-radius: 3px;
+	color: white;
+	text-transform: none;
+	padding: 6px 10px;
+	margin-left: 5px;
+}
+button.modal-call-to-action-btn-primary-children span.MuiButton-label {
+	font-family: 'Inter';
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+}
+button.modal-call-to-action-btn-secondary-children {
+	background: #05023721;
+	top: 0;
+	border-radius: 3px;
+	text-transform: none;
+	padding: 6px 10px;
+}
+button.modal-call-to-action-btn-secondary-children span.MuiButton-label {
+	font-family: 'Inter';
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+}
+
+@media (max-width: 1366px) {
+	/* ****** FIRST COLUMN STYLING( BOOK DETAILS ) ****** */
+	div.book-details-table-format {
+		margin-right: 5px;
+	}
+	p.user-reservations-book-title {
+		font-size: 10px;
+	}
+	div.book-details-table-right-side p.modal-checkin-book-author {
+		font-size: 8px;
+	}
+	div.book-details-table-right-side #modal-checkin-rating-wrapper svg.MuiSvgIcon-root {
+		height: 13px;
+		width: inherit;
+	}
+	div.book-details-table-right-side #modal-checkin-rating-wrapper p#star-rating-total {
+		font-size: 8px;
+	}
+
+	/* ****** BUTTONS ****** */
+
+	button.modal-call-to-action-btn-primary-children span.MuiButton-label,
+	button.modal-call-to-action-btn-secondary-children span.MuiButton-label {
+		font-size: 9px;
+	}
+	button.modal-call-to-action-btn-primary-children,
+	button.modal-call-to-action-btn-secondary-children {
+		padding: 2px;
+	}
+}

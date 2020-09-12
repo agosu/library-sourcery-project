@@ -1,0 +1,42 @@
+.sortWishList{
+    float: right;
+    bottom:6px;
+}
+
+.padding-wishlist{
+    padding-top: 50px !important;
+}
+
+.sortBox {
+    width: 180px;
+    height: 32px;
+    border-radius: 1px;
+    border: 1px solid rgba(5, 2, 55, 0.15);
+}
+
+.sortText {
+    left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    height: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    line-height: 16px;
+    padding-bottom:4px;
+}
+
+div#demo-simple-select-outlined {
+    padding-right: 13px;
+    bottom: 2px;
+    color:#050237;
+}
+
+svg.MuiSvgIcon-root.MuiSelect-icon {
+    font-size: 20px;
+    color: #050237;
+    top:2px;
+   
+}

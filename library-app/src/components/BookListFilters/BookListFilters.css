@@ -1,0 +1,71 @@
+:root {
+	--main-text-color: #050237;
+	--add-filter-color: #4568fb;
+	--chip-background-color: #e0e0e0;
+}
+
+* {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	overflow-x: hidden;
+}
+
+/*.category_chips {
+    width: 100%;
+
+    display: flex;
+    justifyContent: center;
+    flexWrap: wrap;
+}*/
+
+/*CATEGORY CHIP*/
+.category_chips .MuiChip-deletable:focus {
+	background: var(--chip-background-color);
+}
+.category_chips .MuiChip-label,
+.MuiSvgIcon-root.MuiChip-deleteIcon {
+	color: var(--main-text-color);
+}
+
+.category_chips .MuiChip-root {
+	margin: 4px;
+	border-radius: 2px;
+}
+
+/*ADD FILTER BUTTON*/
+/*INACTIVE*/
+.category_chips .MuiButtonBase-root {
+	height: 32px;
+	min-width: 89px;
+	margin: 9px 4px 4px 4px;
+	border-radius: 2px;
+	text-transform: none;
+	color: var(--add-filter-color);
+}
+/*Plus symbol*/
+#category_chips-plus_symbol {
+	margin: 0 2px 2px 0;
+}
+
+.MuiButton-label .MuiSvgIcon-root {
+	color: var(--add-filter-color);
+}
+
+/*ACTIVE*/
+.category_chips .active-button {
+	background-color: var(--chip-background-color);
+	color: var(--main-text-color);
+}
+
+.active-button .MuiSvgIcon-root {
+	color: var(--main-text-color);
+}
+
+.category_chips .active-button:hover {
+	background-color: var(--chip-background-color);
+}

@@ -1,0 +1,314 @@
+:root {
+    --main-type-color: #050237;
+    --app-ui-color: #263238;
+    --active-menu-item-color: rgba(69, 104, 251, 0.05);
+    --blue-color: #4568FB;
+    --border-color: rgba(5, 2, 55, 0.15);
+    --background: #F4F5F7;
+
+    background: #FFFFFF;
+}
+
+#filter_menu {
+    margin-top: 8px;
+    width: 688px;
+    height: 287px;
+    border-radius: 4px;
+}
+
+#filter_menu > div {
+    position: absolute;
+}
+
+
+/*TYPE SELECTION*/
+#filter_menu-type_selection {
+    width: 176px;
+    height: 240px;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#filter_menu-type_selection > .MuiList-root {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Single item*/
+#filter_menu-type_selection * .MuiListItem-root {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid var(--border-color);
+}
+#filter_menu-type_selection .MuiListItemText-root {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    opacity: 0.5;
+    color: var(--main-type-color);
+}
+
+#filter_menu-type_selection .MuiListItemIcon-root {
+    min-width: 16px;
+    right: 16px;
+}
+#filter_menu-type_selection .MuiListItemIcon-root * {
+    min-width: 16px;
+    height: 16px;
+    background: var(--main-type-color);
+    border-radius: 2px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#filter_menu-type_selection .MuiListItemIcon-root div * {
+    padding: 0 2px 0 2px;
+}
+
+.filter_menu-value_selection-list_item-wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#filter_menu-type_selection-list_item-active_line {
+    width: 2px;
+    height: 48px;
+    right: -1px;
+
+    margin-top: -48px;
+
+    position: absolute;
+
+    background: var(--blue-color);
+}
+
+/*Selected item*/
+#filter_menu-type_selection * .MuiListItem-root--selected {
+    background-color: var(--active-menu-item-color);
+}
+#filter_menu-type_selection * .MuiListItem-root--selected > .MuiListItemText-root {
+    color: var(--blue-color);
+    opacity: 1.0;
+}
+
+
+/*VALUE SELECTION*/
+#filter_menu-value_selection {
+    width: 256px;
+    height: 240px;
+
+    left: 175px;
+
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#filter_menu-value_selection .MuiTextField-root {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+
+    border-color: var(--blue-color);
+
+    width: 240px;
+}
+
+#filter_menu-value_selection > .MuiTextField-root * .MuiInput-input {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: var(--app-ui-color);
+}
+
+#filter_menu-value_selection .MuiTextField-root .MuiSvgIcon-root {
+    color: var(--main-type-color);
+    opacity: 0.5;
+}
+
+#filter_menu-value_selection .MuiInput-underline:after {
+    border-bottom: 2px solid var(--blue-color);
+}
+
+
+/*Values*/
+#filter_menu-value_selection-values {
+    position: absolute;
+    top: 45px;
+}
+
+#filter_menu-value_selection-values .MuiListItem-root {
+    height: 30px;
+}
+
+/*Checkbox*/
+#filter_menu-value_selection-values .MuiListItemIcon-root {
+    margin-left: -15px;
+    min-width: 0;
+}
+#filter_menu-value_selection-values .MuiListItemIcon-root:hover * {
+    background-color: transparent;
+}
+
+#filter_menu-value_selection-values .MuiCheckbox-root:not(.Mui-checked) .MuiSvgIcon-root {
+    color: #E0E0E0;
+}
+#filter_menu-value_selection-values .MuiSvgIcon-root {
+    color: var(--blue-color);
+}
+
+/*Value text*/
+#filter_menu-value_selection-values .MuiListItemText-root {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: var(--main-type-color);
+}
+
+
+/*OVERVIEW*/
+#filter_menu-overview {
+    width: 256px;
+    height: 240px;
+
+    left: 431px;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+#filter_menu-overview-selected_count {
+    width: 100%;
+    height: 40px;
+}
+
+#filter_menu-overview-selected_count-text {
+    position: absolute;
+    margin: 18px 0 0 16px;
+}
+
+#filter_menu-overview-content {
+    margin: 16px 0 0 16px;
+}
+
+.filter_menu-overview-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+
+    color: var(--main-type-color);
+    opacity: 0.5;
+}
+
+.filter_menu-overview-filter_type {
+    margin-top: 8px;
+}
+
+
+/*Chips*/
+.filter_menu-overview-chips {
+    margin-top: 0px;
+}
+
+.filter_menu-overview-chips .MuiChip-root {
+    height: 16px;
+    margin-top: 8px;
+
+    background-color: var(--background);
+    border-radius: 4px;
+}
+
+.filter_menu-overview-chips .MuiChip-root:focus {
+    background-color: var(--background);
+}
+
+.filter_menu-overview-chips .MuiChip-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    padding-left: 2px;
+
+    color: var(--main-type-color);
+}
+
+/*Chip delete icon*/
+.filter_menu-overview-chips .MuiSvgIcon-root {
+    margin-top: 2px;
+    margin-right: 0px;
+    right: 0px;
+
+    width: 17px;
+    height: 17px;
+}
+.filter_menu-overview-chips .MuiSvgIcon-root:first-child {
+
+}
+
+/*CONTROLS*/
+#filter_menu-control {
+    height: 48px;
+    top: 263px;
+    right: 16px;
+}
+
+#filter_menu-control-cancel, #filter_menu-control-apply {
+    text-transform: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#filter_menu-control-cancel {
+    margin-right: 16px;
+
+    color: var(--main-type-color);
+    opacity: 0.5;
+}
+
+#filter_menu-control-apply {
+    background: var(--blue-color);
+    color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 727px) {
+    #filter_menu {
+        width: 432px;
+    }
+
+    #filter_menu-value_selection {
+        border-right: 0;
+    }
+
+    #filter_menu-overview {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+
+

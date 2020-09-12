@@ -1,0 +1,170 @@
+.CommentBox {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+}
+
+.total-comments {
+	padding-left: 0.5rem;
+
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #050237;
+}
+
+.comment-top {
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+}
+.bold {
+	font-weight: bold;
+}
+
+.pageNumbers {
+	text-align: right;
+	float: right;
+}
+
+.sort-by {
+	background: #f4f5f7;
+	border: 1px solid rgba(5, 2, 55, 0.15);
+	box-sizing: border-box;
+	border-radius: 2px;
+	float: right;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 3px;
+}
+
+.commentText {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* or 143% */
+	color: #050237;
+	opacity: 0.5;
+	padding-bottom: 20px;
+	white-space: pre;
+}
+
+.likes {
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+	color: #050237;
+	padding-bottom: 40px;
+}
+
+.like {
+	color: #1e90ff;
+	font-weight: bold;
+	border: none;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+.date {
+	margin-bottom: 20px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+	color: #050237;
+	opacity: 0.5;
+}
+
+.name {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+	/* Main type */
+	color: #050237;
+}
+
+.page {
+	padding-top: 2rem;
+}
+.avatar {
+	text-align: center;
+	width: 36px;
+	border-radius: 50%;
+}
+
+div.page div div.MuiGrid-root.MuiGrid-container div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-11 {
+	padding-left: 1rem;
+}
+
+@media (max-width: 375px) {
+	.avatar {
+		margin-left: 1rem;
+	}
+}
+
+#book-details-divider {
+	margin-bottom: 15px;
+	background: #050237;
+	opacity: 0.15;
+}
+
+.tot-coms-pagination .span{
+	padding-top: 30px;
+	vertical-align: middle;
+}
+
+.padding-top{
+	padding-top:35px;
+	padding-bottom:70px;
+	width:100%;
+}
+
+.textFld {
+	width: 100%;
+	height: 40px;
+	padding-bottom: 10px;
+}
+
+
+
+.flex-containerr {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+
+}
+
+.MuiInputBase-input {
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+}
+
+input#outlined-basic {
+	padding: 11.69px 14px;
+}
+
+.invisible {
+	display: none;
+}
+
+#post-btn {
+	margin-top: 7px;
+	margin-left: 5px;
+}
+
+
+
+

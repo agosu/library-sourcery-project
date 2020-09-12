@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+	header.ActiveReservation + table.MuiTable-root {
+		table-layout: auto;
+		margin-top: 0.5rem;
+	}
+	.ccPQCq table tr td {
+		text-align: center;
+	}
+
+	.ccPQCq table tr td:nth-child(1),
+	.ccPQCq table tr td:nth-child(2) {
+		padding: 0;
+	}
+	div.ccPQCq {
+		padding: 0;
+	}
+	div.ccPQCq th {
+		text-align: center;
+		padding: 0;
+	}
+}

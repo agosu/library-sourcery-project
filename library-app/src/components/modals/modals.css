@@ -1,0 +1,664 @@
+:root {
+	--main-text-color: #050237;
+	--main-transparent-color: rgba(5, 2, 55, 0.3);
+	--main-btn-confirm-color: #4568fb;
+	--main-btn-confirm-inner-text-color: #ffffff;
+}
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+/* *************UTILITIES*************  */
+
+.modal-checkin-seperator:first-child {
+	width: 99%;
+	height: 1px;
+	background: var(--main-transparent-color);
+	position: relative;
+	top: -7%;
+}
+.modal-checkin-seperator:last-of-type {
+	width: 99%;
+	height: 1px;
+	background: var(--main-transparent-color);
+}
+#modal-call-to-action-btn-primary {
+	width: 100%;
+	max-width: 225px;
+	height: 40px;
+	background: #4568fb;
+	font-size: 14px;
+	border-radius: 3px;
+	color: #ffffff;
+	border: 0;
+	display: block;
+	text-transform: none;
+}
+#modal-call-to-action-btn-secondary {
+	width: 100%;
+	max-width: 225px;
+	height: 40px;
+	background: rgb(219, 219, 219);
+	color: #050237;
+	font-size: 14px;
+	border-radius: 3px;
+	border: 0;
+	display: block;
+	text-transform: none;
+}
+#modal-call-to-action-btn-primary:hover {
+	background: #2143ce;
+}
+#admin-edit-details-btn {
+	text-transform: none;
+	width: 121px;
+	height: 28px;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+	background: #050237;
+	font-size: 12px;
+	line-height: 15px;
+}
+#admin-edit-details-btn-svg {
+	margin-right: 0.625rem;
+}
+
+/* *************GENERAL MODAL STYLING************* */
+
+/* MODAL WINDOW */
+div.MuiDialogContent-root {
+	border: none;
+}
+div.MuiGrid-root {
+	padding: 0;
+}
+.wrapper1 div.MuiPaper-root {
+	width: 500px;
+	height: 603px;
+	overflow-y: unset;
+}
+
+.MuiPickersModal-dialogRoot {
+	width: 300px;
+	height: 400px;
+}
+
+.wrapperWishList div.MuiPaper-root {
+	width: 700px;
+	height: 684px;
+	overflow-y: unset;
+}
+
+div.MuiFormControl-marginNormal {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.MuiAutocomplete-listbox {
+	height: 200px;
+}
+
+#modal-dialog-content {
+	padding-top: 0;
+}
+#modal-checkin-close-icon {
+	padding: 0;
+}
+#modal-checkin-close-icon-svg {
+	color: var(--main-text-color);
+	font-size: 1.5rem;
+	padding: 0;
+}
+#modal-checkin-close-icon:hover {
+	background: none;
+}
+/* TITLE */
+h6 {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	margin-left: 1.1rem;
+	color: var(--main-text-color);
+}
+#modal-checkin-dialog-title {
+	padding: 1rem 2rem;
+}
+#modal-checkin-title-wrapper {
+	color: var(--main-text-color);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+}
+
+/* *************BOOK DETAILS*************  */
+#modal-checkin-book-cover {
+	width: 100px;
+	height: 152.35px;
+	display: inline-block;
+	border-radius: 6px;
+	margin-left: 1rem;
+}
+#modal-checkin-book-title {
+	max-width: 312px;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: var(--main-text-color);
+}
+.modal-checkin-right-side {
+	padding-left: 0.25rem;
+	padding-bottom: 0.5rem;
+}
+.modal-checkin-book-author {
+	margin: 0.5rem 0;
+	text-decoration: underline;
+	color: #050237;
+	opacity: 0.5;
+	font-weight: 600;
+	font-size: 12px;
+	display: inline-block;
+	margin: 0 0.3rem 0 0;
+}
+#modal-checkin-rating-wrapper {
+	display: flex;
+	align-items: center;
+}
+#modal-checkin-rating-wrapper svg.MuiSvgIcon-root {
+	color: #eeb23d;
+	height: 20px;
+}
+div#modal-checkin-rating-wrapper #star-rating-total {
+	display: inline-block;
+	font-weight: 600;
+	padding-left: 0.5rem;
+	padding-bottom: 0.1rem;
+	font-size: 12px;
+}
+/* *************USER INPUT************* */
+
+.modal-checkin-secondary-text {
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--main-transparent-color);
+	margin-bottom: 1.2rem;
+}
+.modal-enterwaitlist-text {
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--main-text-color);
+	opacity: 0.5;
+	margin-bottom: 1.2rem;
+}
+.modal-Wishlist-secondary-text {
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--main-transparent-color);
+	margin-bottom: 1.2rem;
+	margin-top: 1.2rem;
+	margin-left: 1.2rem;
+}
+
+.modal-checkin-secondary-text:last-of-type {
+	margin-top: 1.2rem;
+}
+.modal-Wishlist-secondary-text:last-of-type {
+	margin-top: 1.2rem;
+}
+#modal-checkin-review-textarea {
+	width: 294px;
+	height: 100px;
+	resize: none;
+	padding: 0.5rem;
+	border: 1px solid rgba(5, 2, 55, 0.15);
+	border-radius: 4px;
+	margin-bottom: 2rem;
+}
+
+#modal-Wishlist-review-textarea2 {
+	width: 520px;
+	height: 100px;
+	resize: none;
+	padding: 0.5rem;
+	border: 1px solid var(--main-transparent-color);
+	border-radius: 4px;
+}
+#modal-checkin-review-textarea::placeholder {
+	font-weight: 500;
+	font-size: 14px;
+	color: #050237;
+	opacity: 0.5;
+}
+#modal-checkin-switch-label {
+	padding-left: 0.7rem;
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	padding-left: 1rem;
+}
+#modal-checkin-switch-label span.MuiTypography-root.MuiFormControlLabel-label {
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	padding-left: 0.25rem;
+}
+
+/* *************BUTTONS************* */
+
+button.MuiButtonBase-root {
+	top: -5px;
+	right: 0;
+}
+
+#modal-checkin-primary-btn {
+	width: 86px;
+	height: 32px;
+	background: var(--main-btn-confirm-color);
+	border: 1px solid var(--main-transparent-color);
+	border-radius: 3px;
+	box-shadow: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: capitalize;
+	color: var(--main-btn-confirm-inner-text-color);
+	line-height: 16px;
+}
+#modal-checkin-primary-btn:hover {
+	background: #2b49c2;
+	box-shadow: none;
+}
+#modal-checkin-secondary-btn {
+	width: 86px;
+	height: 32px;
+	background: #ffffff;
+	border: 1px solid var(--main-transparent-color);
+	border-radius: 3px;
+	box-shadow: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: capitalize;
+	color: var(--main-text-color);
+	line-height: 16px;
+}
+#modal-checkin-secondary-btn:hover {
+	box-shadow: none;
+	background: rgba(130, 130, 131, 0.15);
+}
+#modal-enterwaitlist-btn {
+	width: 130px;
+	height: 32px;
+	background: var(--main-text-color);
+	border: 1px solid var(--main-transparent-color);
+	border-radius: 3px;
+	box-shadow: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: capitalize;
+	color: var(--main-btn-confirm-inner-text-color);
+	line-height: 16px;
+}
+
+.new-book-request-btn {
+	color: #fff;
+}
+/* ****************DELETE MODAL STYLING******* */
+#delete-book-title {
+	font-weight: bold;
+}
+#delete-modal-confirm-btn {
+	background-color: #800000;
+	color: white;
+	height: 32px;
+	margin-right: 2.4rem;
+}
+#delete-link {
+	text-decoration: none;
+}
+
+/* ****************CAN'T FIND COPY TEXT******* */
+#grey-text {
+	text-align: left;
+	margin: 0 30px 25px 33px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #050237;
+	opacity: 0.5;
+}
+
+/* ****************** WISHLIST ****************** */
+#add-icon {
+	color: #fff;
+	height: 40px;
+	width: 40px;
+}
+
+@media (max-width: 600px) {
+	/* *************MODAL BODY************* */
+	.wrapper1 div.MuiPaper-root {
+		width: 500px;
+		height: 603px;
+		overflow-y: unset;
+	}
+
+	/* *************BOOK INFO************* */
+	#modal-checkin-book-title {
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
+
+	.modal-checkin-right-side {
+		padding-left: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+	.modal-checkin-right-side {
+		margin-left: 0.5rem;
+	}
+	/* *************USER INPUT************* */
+	#modal-checkin-review-textarea {
+		width: 270px;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+	}
+
+	.modal-checkin-secondary-text:first-of-type {
+		text-align: center;
+		margin-top: 1.2rem;
+	}
+	.modal-checkin-secondary-text:last-of-type {
+		text-align: center;
+	}
+
+	.modal-Wishlist-secondary-text {
+		text-align: center;
+		margin-top: 1.2rem;
+	}
+
+	#modal-Wishlist-review-textarea2 {
+		width: 300px;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+		margin-bottom: 2rem;
+	}
+
+	#modal-checkin-switch-label {
+		margin-left: 1.1rem;
+	}
+
+	/* *************UTILITIES************* */
+	.modal-checkin-seperator:first-child {
+		width: 288px;
+		height: 1px;
+		background: var(--main-transparent-color);
+		position: static;
+		margin-top: 1.2rem;
+	}
+	.modal-checkin-seperator:last-of-type {
+		width: 288px;
+		height: 1px;
+		background: var(--main-transparent-color);
+	}
+
+	/* *************BUTTONS************* */
+	#modal-checkin-btn-wrapper {
+		justify-content: center;
+	}
+	#modal-checkin-secondary-btn {
+		width: 86px;
+		height: 32px;
+		background: #ffffff;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-text-color);
+		line-height: 16px;
+	}
+	#modal-checkin-primary-btn {
+		width: 86px;
+		height: 32px;
+		background: var(--main-btn-confirm-color);
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-btn-confirm-inner-text-color);
+		line-height: 16px;
+	}
+}
+@media (max-width: 414px) {
+	/* *************MODAL BODY************* */
+	.wrapper1 div.MuiPaper-root {
+		width: 400px;
+		height: 500px;
+		overflow-y: unset;
+	}
+
+	/* *************BOOK INFO************* */
+	#modal-checkin-book-title {
+		font-size: 0.9rem;
+	}
+	.modal-checkin-book-author {
+		font-size: 0.65rem;
+	}
+	.modal-checkin-right-side {
+		padding-bottom: 0.4rem;
+		padding-left: 0;
+	}
+	#modal-checkin-rating-wrapper {
+		margin-left: 0.15rem;
+	}
+	/* *************USER INPUT************* */
+	#modal-checkin-review-textarea {
+		width: 95%;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+	}
+	.modal-checkin-secondary-text:first-of-type {
+		text-align: center;
+	}
+	.modal-checkin-secondary-text:last-of-type {
+		text-align: center;
+	}
+
+	.modal-Wishlist-secondary-text {
+		text-align: center;
+		margin-top: 1.2rem;
+	}
+	#modal-Wishlist-review-textarea2 {
+		width: 95%;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+		margin-bottom: 2rem;
+	}
+
+	#modal-checkin-switch-label {
+		margin-left: 1.1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* *************UTILITIES************* */
+	.modal-checkin-seperator:first-child {
+		width: 100%;
+		height: 1px;
+		background: var(--main-transparent-color);
+	}
+	.modal-checkin-seperator:last-of-type {
+		width: 100%;
+		height: 1px;
+		background: var(--main-transparent-color);
+	}
+
+	/* *************BUTTONS************* */
+	#modal-checkin-btn-wrapper {
+		justify-content: center;
+	}
+	#modal-checkin-secondary-btn {
+		width: 86px;
+		height: 32px;
+		background: #ffffff;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-text-color);
+		line-height: 16px;
+	}
+	#modal-checkin-primary-btn {
+		width: 86px;
+		height: 32px;
+		background: var(--main-btn-confirm-color);
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-btn-confirm-inner-text-color);
+		line-height: 16px;
+	}
+}
+@media (orientation: landscape) and (max-width: 1023px) {
+	/* *************MODAL BODY************* */
+	.wrapper1 div.MuiPaper-root {
+		width: 500px;
+		height: 603px;
+		overflow-y: unset;
+	}
+
+	div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-5.MuiGrid-grid-sm-4 {
+		max-width: 30%;
+	}
+	/* *************BOOK INFO************* */
+	#modal-checkin-book-cover {
+		width: 100px;
+		height: 152.35px;
+		display: inline-block;
+		border-radius: 6px;
+	}
+	#modal-checkin-book-title {
+		font-size: 1rem;
+	}
+	.modal-checkin-book-author {
+		font-size: 11px;
+		margin: 0 0.3rem 0 0;
+	}
+	.modal-checkin-right-side {
+		padding-left: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+	#modal-checkin-rating-wrapper {
+		margin-top: 1.5rem;
+	}
+	/* *************USER INPUT************* */
+	#modal-checkin-review-textarea {
+		width: 95%;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+	}
+	.modal-checkin-secondary-text:first-of-type {
+		text-align: center;
+	}
+	.modal-checkin-secondary-text:last-of-type {
+		text-align: center;
+	}
+
+	.modal-Wishlist-secondary-text {
+		text-align: center;
+		margin-top: 1.2rem;
+	}
+	#modal-Wishlist-review-textarea2 {
+		width: 100%;
+		height: 100px;
+		resize: none;
+		padding: 0.5rem;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 4px;
+		margin-bottom: 2rem;
+	}
+
+	#modal-checkin-switch-label {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* *************UTILITIES************* */
+	.modal-checkin-seperator:first-child {
+		width: 99%;
+		height: 1px;
+		background: var(--main-transparent-color);
+	}
+	.modal-checkin-seperator:last-of-type {
+		width: 99%;
+		height: 1px;
+		background: var(--main-transparent-color);
+	}
+
+	/* *************BUTTONS************* */
+	#modal-checkin-btn-wrapper {
+		justify-content: center;
+	}
+	#modal-checkin-secondary-btn {
+		width: 86px;
+		height: 32px;
+		background: #ffffff;
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-text-color);
+		line-height: 16px;
+	}
+	#modal-checkin-primary-btn {
+		width: 86px;
+		height: 32px;
+		background: var(--main-btn-confirm-color);
+		border: 1px solid var(--main-transparent-color);
+		border-radius: 3px;
+		box-shadow: none;
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: var(--main-btn-confirm-inner-text-color);
+		line-height: 16px;
+	}
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeInherit {
+	font-size: 2.5rem;
+}

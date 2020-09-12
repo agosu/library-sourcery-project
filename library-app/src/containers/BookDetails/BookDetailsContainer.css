@@ -1,0 +1,210 @@
+#main-display-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+#book-details-content-wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 0 85% 15%;
+}
+#active-reservations-wrapper {
+	width: 100%;
+}
+div.book div.book-rating svg.MuiSvgIcon-root {
+	color: #eeb23d;
+}
+#reserve-at-placeholder {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+#book-details-top-placeholder {
+	height: 110px;
+	width: 100%;
+	display: block;
+}
+#main-content-display-wrapper {
+	width: 87.8%;
+}
+
+div#main-content-display-wrapper div div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+	width: 100%;
+	padding-left: 2rem;
+}
+#modal-call-to-action-btn-secondary-children,
+#modal-call-to-action-btn-primary-children {
+	display: none;
+}
+div#reserve-at-placeholder input.PrivateSwitchBase-input-236:checked {
+	color: #4568fb;
+}
+@media (max-width: 1366px) {
+	/* ************ General settings for displaying content ************ */
+	#menu-placeholder {
+		display: none;
+	}
+	div #main-content-display-wrapper {
+
+	}
+	#book-details-content-wrapper {
+		grid-template-columns: 0 80% 20%;
+	}
+	#book-details-top-placeholder {
+		height: 60px;
+	}
+	/* ************ Buttons ************ */
+
+	#modal-call-to-action-btn-primary {
+		height: 30px;
+		font-size: 75%;
+		text-align: center;
+		line-height: normal;
+	}
+	#modal-call-to-action-btn-secondary {
+		height: 30px;
+		font-size: 75%;
+		text-align: center;
+		line-height: normal;
+	}
+}
+
+@media (max-width: 414px) {
+	/* ************ General settings for displaying content ************ */
+	#menu-placeholder {
+		display: none;
+	}
+
+	div #main-content-display-wrapper {
+		width: 100%;
+	}
+	#book-details-top-placeholder {
+		height: 60px;
+	}
+	#reserve-at-placeholder {
+		display: none;
+	}
+	#book-details-content-wrapper {
+		grid-template-columns: 0 100% 0%;
+	}
+	#book-details-flex-grid {
+		padding-left: 0;
+	}
+
+	img.book-details-cover {
+		margin-left: 35px;
+	}
+	/* ************ Buttons ************ */
+	#modal-call-to-action-btn-secondary-children,
+	#modal-call-to-action-btn-primary-children {
+		display: inline-block;
+		width: 110px;
+		min-width: 150px;
+		margin-bottom: 1rem;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 25px;
+		color: #050237;
+		border-radius: 3px;
+		text-transform: none;
+	}
+	#modal-call-to-action-btn-primary-children {
+		background: #4568fb;
+		border-radius: 3px;
+		color: #ffffff;
+		border: 0;
+		padding: 5px 15px;
+		margin-right: 10px;
+	}
+	#modal-call-to-action-btn-secondary-children {
+		background: rgb(219, 219, 219);
+		border-radius: 3px;
+		color: #050237;
+		border: 0;
+		padding: 5px 15px;
+		margin-right: 9px;
+	}
+	#book-details-btn-wrapper {
+		display: grid;
+		grid-template-columns: 50% auto;
+		justify-items: center;
+		align-items: center;
+	}
+	#book-details-button {
+		min-width: 150px;
+	}
+}
+@media (max-width: 375px) {
+	img.book-details-cover {
+		margin-left: 16px;
+	}
+}
+@media (max-width: 320px) {
+	#book-details-flex-grid {
+		padding-left: 0;
+	}
+	div #book-details-top-placeholder {
+		width: 360px;
+	}
+	img.book-details-cover {
+		margin-left: 35px;
+	}
+}
+@media (orientation: landscape) and (max-width: 1023px) {
+	#reserve-at-placeholder {
+		display: none;
+	}
+	#book-details-content-wrapper {
+		grid-template-columns: 0 100% 0%;
+	}
+
+	#modal-call-to-action-btn-secondary-children,
+	#modal-call-to-action-btn-primary-children {
+		display: inline-block;
+		width: 110px;
+		min-width: 150px;
+		margin-bottom: 1rem;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 25px;
+		color: #050237;
+		border-radius: 3px;
+		text-transform: none;
+	}
+	#modal-call-to-action-btn-primary-children {
+		background: #4568fb;
+		border-radius: 3px;
+		color: #ffffff;
+		border: 0;
+		padding: 5px 15px;
+		margin-right: 10px;
+	}
+	#modal-call-to-action-btn-secondary-children {
+		background: rgb(219, 219, 219);
+		border-radius: 3px;
+		color: #050237;
+		border: 0;
+		padding: 5px 15px;
+		margin-right: 9px;
+	}
+	#book-details-btn-wrapper {
+		display: grid;
+		grid-template-columns: 35% 35%;
+		justify-items: center;
+		align-items: center;
+	}
+	#book-details-button {
+		min-width: 150px;
+	}
+}
+@media (orientation: landscape) and (max-width: 700px) {
+	#book-details-btn-wrapper {
+		grid-template-columns: 42% 42%;
+	}
+}
+@media (orientation: landscape) and (max-width: 600px) {
+	#book-details-btn-wrapper {
+		grid-template-columns: 50% 50%;
+	}
+}

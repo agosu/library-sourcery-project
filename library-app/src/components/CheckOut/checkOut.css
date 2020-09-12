@@ -1,0 +1,608 @@
+:root {
+    --main-text-color: #050237;
+    --main-transparent-color: rgba(5, 2, 55, 0.3);
+    --main-btn-confirm-color: #4568fb;
+    --main-btn-confirm-inner-text-color: #ffffff;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* *************UTILITIES*************  */
+
+.modal-checkOut-seperator:first-child {
+    width: 99%;
+    height: 1px;
+    background: var(--main-transparent-color);
+    position: relative;
+    top: -7%;
+}
+
+.modal-checkOut-seperator:last-of-type {
+    width: 99%;
+    height: 1px;
+    background: var(--main-transparent-color);
+}
+
+/* *************GENERAL MODAL STYLING************* */
+
+/* MODAL WINDOW */
+div.MuiDialogContent-root {
+    border: none;
+}
+
+div.MuiGrid-root {
+    padding: 0;
+}
+
+.wrapper div.MuiPaper-root {
+    width: 500px;
+    height: 684px;
+    overflow-y: unset;
+}
+
+#modal-dialog-content {
+    padding-top: 0;
+}
+
+#modal-checkOut-close-icon svg.MuiSvgIcon-root {
+    font-size: 16px;
+    padding-left: 5px;
+    padding: 0;
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+}
+
+button#modal-checkOut-close-icon {
+    left: 20px;
+}
+
+#modal-checkOut-close-icon:hover {
+    background: none;
+}
+/* TITLE */
+h6 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 1.1rem;
+    color: var(--main-text-color);
+}
+
+#modal-checkOut-dialog-title {
+    padding: 1rem 2rem;
+}
+
+#modal-checkOut-title-wrapper {
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* *************BOOK DETAILS*************  */
+#modal-checkOut-book-cover {
+    width: 100px;
+    height: 152.35px;
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 1rem;
+}
+
+#modal-checkOut-book-title {
+    max-width: 312px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--main-text-color);
+}
+
+.modal-checkOut-right-side {
+    padding-left: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+
+.modal-checkOut-book-author {
+    margin: 0.5rem 0;
+    text-decoration: underline;
+    color: #050237;
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 0.3rem 0 0;
+}
+
+#modal-checkOut-rating-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#modal-checkOut-rating-wrapper svg.MuiSvgIcon-root {
+    color: #eeb23d;
+    height: 20px;
+}
+
+#star-rating-total {
+    display: inline-block;
+    font-weight: 600;
+    padding-left: 0.5rem;
+    font-size: 12px;
+}
+/* *************USER INPUT************* */
+
+.modal-checkOut-secondary-text {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--main-transparent-color);
+    margin-bottom: 1.2rem;
+}
+
+.modal-checkOut-secondary-text:last-of-type {
+    margin-top: 1.2rem;
+}
+
+#modal-checkOut-review-textarea {
+    width: 294px;
+    height: 100px;
+    resize: none;
+    padding: 0.5rem;
+    border: 1px solid rgba(5, 2, 55, 0.15);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+#modal-checkOut-review-textarea::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #050237;
+    opacity: 0.5;
+}
+
+#modal-checkOut-switch-label {
+    padding-left: 0.7rem;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding-left: 0.9rem;
+}
+
+#modal-checkOut-switch-label span.MuiTypography-root.MuiFormControlLabel-label {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding-left: 0.5rem;
+    padding-top: 1px;
+}
+
+/* *************BUTTONS************* */
+
+
+
+#modal-checkOut-primary-btn {
+    width: 166px;
+    height: 32px;
+    white-space: nowrap;
+    background: var(--main-btn-confirm-color);
+    border: 1px solid var(--main-transparent-color);
+    border-radius: 3px;
+    box-shadow: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--main-btn-confirm-inner-text-color);
+    line-height: 16px;
+}
+
+#modal-checkOut-primary-btn:hover {
+    background: #2b49c2;
+    box-shadow: none;
+}
+
+#modal-checkOut-secondary-btn {
+    width: 79px;
+    height: 32px;
+    background: #ffffff;
+    border: 1px solid var(--main-transparent-color);
+    border-radius: 3px;
+    box-shadow: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--main-text-color);
+    line-height: 16px;
+}
+
+#modal-checkOut-secondary-btn:hover {
+    box-shadow: none;
+    background: rgba(130, 130, 131, 0.15);
+}
+
+@media (max-width: 600px) {
+    /* *************MODAL BODY************* */
+    .wrapper div.MuiPaper-root  {
+        width: 500px;
+        height: 684px;
+        margin: 0;
+    }
+
+    /* *************BOOK INFO************* */
+    #modal-checkOut-book-title {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .modal-checkOut-right-side {
+        padding-left: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .modal-checkOut-right-side {
+        margin-left: 0.5rem;
+    }
+    /* *************USER INPUT************* */
+    #modal-checkOut-review-textarea {
+        width: 270px;
+        height: 100px;
+        resize: none;
+        padding: 0.5rem;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 4px;
+    }
+
+    .modal-checkOut-secondary-text:first-of-type {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+
+    .modal-checkOut-secondary-text:last-of-type {
+        text-align: center;
+    }
+
+    #modal-checkOut-switch-label {
+        margin-left: 1.3rem;
+    }
+
+    /* *************UTILITIES************* */
+    .modal-checkOut-seperator:first-child {
+        width: 288px;
+        height: 1px;
+        background: var(--main-transparent-color);
+        position: static;
+        margin-top: 1.2rem;
+    }
+
+    .modal-checkOut-seperator:last-of-type {
+        width: 288px;
+        height: 1px;
+        background: var(--main-transparent-color);
+    }
+
+    /* *************BUTTONS************* */
+    #modal-checkOut-btn-wrapper {
+        justify-content: center;
+    }
+
+    #modal-checkOut-secondary-btn {
+        width: 86px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-text-color);
+        line-height: 16px;
+    }
+
+    #modal-checkOut-primary-btn {
+        white-space: nowrap;
+        width: 86px;
+        height: 32px;
+        background: var(--main-btn-confirm-color);
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-btn-confirm-inner-text-color);
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 414px) {
+    /* *************MODAL BODY************* */
+    .wrapper div.MuiPaper-root {
+        width: 500px;
+        height: 684px;
+        margin: 0;
+    }
+
+    /* *************BOOK INFO************* */
+    #modal-checkOut-book-title {
+        font-size: 0.9rem;
+    }
+
+    .modal-checkOut-book-author {
+        font-size: 0.65rem;
+    }
+
+    .modal-checkOut-right-side {
+        padding-bottom: 0.4rem;
+        padding-left: 0;
+    }
+
+    #modal-checkOut-rating-wrapper {
+        margin-left: 0.15rem;
+    }
+    /* *************USER INPUT************* */
+    #modal-checkOut-review-textarea {
+        width: 95%;
+        height: 100px;
+        resize: none;
+        padding: 0.5rem;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 4px;
+    }
+
+    .modal-checkOut-secondary-text:first-of-type {
+        text-align: center;
+    }
+
+    .modal-checkOut-secondary-text:last-of-type {
+        text-align: center;
+    }
+
+    #modal-checkOut-switch-label {
+        margin-left: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* *************UTILITIES************* */
+    .modal-checkOut-seperator:first-child {
+        width: 100%;
+        height: 1px;
+        background: var(--main-transparent-color);
+    }
+
+    .modal-checkOut-seperator:last-of-type {
+        width: 100%;
+        height: 1px;
+        background: var(--main-transparent-color);
+    }
+
+    /* *************BUTTONS************* */
+    #modal-checkOut-btn-wrapper {
+        justify-content: center;
+    }
+
+    #modal-checkOut-secondary-btn {
+        width: 86px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-text-color);
+        line-height: 16px;
+    }
+
+    #modal-checkOut-primary-btn {
+        width: 86px;
+        height: 32px;
+        background: var(--main-btn-confirm-color);
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-btn-confirm-inner-text-color);
+        line-height: 16px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1023px) {
+    /* *************MODAL BODY************* */
+    .wrapper div.MuiPaper-root {
+        width: 500px;
+        height: 684px;
+        margin: 0;
+    }
+
+    div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-5.MuiGrid-grid-sm-4 {
+        max-width: 30%;
+    }
+    /* *************BOOK INFO************* */
+    #modal-checkOut-book-cover {
+        width: 100px;
+        height: 152.35px;
+        display: inline-block;
+        border-radius: 6px;
+    }
+
+    #modal-checkOut-book-title {
+        font-size: 1rem;
+    }
+
+    .modal-checkOut-book-author {
+        font-size: 11px;
+        margin: 0 0.3rem 0 0;
+    }
+
+    .modal-checkOut-right-side {
+        padding-left: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    #modal-checkOut-rating-wrapper {
+        margin-top: 0.5rem;
+    }
+    /* *************USER INPUT************* */
+    #modal-checkOut-review-textarea {
+        width: 95%;
+        height: 100px;
+        resize: none;
+        padding: 0.5rem;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 4px;
+    }
+
+    .modal-checkOut-secondary-text:first-of-type {
+        text-align: center;
+    }
+
+    .modal-checkOut-secondary-text:last-of-type {
+        text-align: center;
+    }
+
+    #modal-checkOut-switch-label {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* *************UTILITIES************* */
+    .modal-checkOut-seperator:first-child {
+        width: 99%;
+        height: 1px;
+        background: var(--main-transparent-color);
+    }
+
+    .modal-checkOut-seperator:last-of-type {
+        width: 99%;
+        height: 1px;
+        background: var(--main-transparent-color);
+    }
+
+    /* *************BUTTONS************* */
+    #modal-checkOut-btn-wrapper {
+        justify-content: center;
+    }
+
+    #modal-checkOut-secondary-btn {
+        width: 86px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-text-color);
+        line-height: 16px;
+    }
+
+    #modal-checkOut-primary-btn {
+        width: 86px;
+        height: 32px;
+        background: var(--main-btn-confirm-color);
+        border: 1px solid var(--main-transparent-color);
+        border-radius: 3px;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: var(--main-btn-confirm-inner-text-color);
+        line-height: 16px;
+    }
+
+   
+}
+.officeName {
+    color: #050237;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.availableBooks {
+    color: #3BA77A;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.officeAddress {
+    color: #050237;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.paddinger{
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+
+.paddinger1 {
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+
+.datepicker{
+    width:313px;
+    height:50px;
+}
+
+.MuiPickersModal-dialog:first-child {
+    padding: 0;
+}
+
+.wrapper .MuiOutlinedInput-input {
+    padding: 9.5px 14px !important;
+    width:210px !important;
+}
+
+
+
+.MuiInputBase-input {
+    font-family: 'Inter', sans-serif !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #050237 !important;
+    width: 100%;
+    border: 0;
+    height: 1.1875em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#DateTime button.MuiButtonBase-root.MuiIconButton-root {
+    top: 1px;
+    left: 10px;
+}
+
+.wrapper div.MuiPaper-root .datepickerr {
+    width: 400px !important;
+    height: 300px;
+    margin: 0;
+}

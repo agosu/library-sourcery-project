@@ -1,0 +1,31 @@
+#user-profile-title {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Inter', monospace;
+  line-height: 24px;
+  margin-bottom: 1.5rem;
+}
+#profile-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(5, 2, 55, 0.15);
+  margin-bottom: 1rem;
+}
+.profile-menu-item {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter', monospace;
+  font-weight: normal;
+  font-size: 12px;
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+  color: #050237;
+}
+.profile-menu-item:visited {
+  color: inherit;
+}
+.profile-menu-item.active {
+  font-weight: 600;
+  border-bottom: 2px solid #4568fb;
+}

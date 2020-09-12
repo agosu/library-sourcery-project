@@ -1,0 +1,36 @@
+root {
+	--primary-user-profile-color: #050237;
+}
+
+/*  *************** USER PROFILE COMPONENT *************** */
+
+/* USER PROFILE WRAPPER */
+#user-profile {
+	width: 240px;
+	padding-left: 16px;
+}
+
+/* USER PROFILE INFORMATION */
+
+#user-profile-picture {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	margin-bottom: 0.3rem;
+}
+
+#user-profile-greeting {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--primary-user-profile-color);
+	margin-bottom: 0.1rem;
+}
+#user-profile-email,
+#user-profile-office {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1rem;
+	color: var(--primary-user-profile-color);
+	opacity: 0.5;
+}
